@@ -21,6 +21,3 @@ class UserResource(ModelResource):
         allowed_methods = ['get', 'post', 'put']
         excludes = ['auth_id']
         authorization = Authorization()
-        filtering = {
-            'role': ALL,
-        }
